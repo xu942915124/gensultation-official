@@ -1,0 +1,1606 @@
+*{
+    font-family: PingFang SC Regular, Microsoft YaHei, 微软雅黑, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    list-style: none;
+}
+body {
+    font-family: "PingFang SC Regular", "Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important;
+    min-width: 1440px;
+    letter-spacing: 1px;
+    margin:0 auto;
+}
+.swiper-button-prev{
+    background-image:url('../img/logos/icon_arrow_left.png');
+    left:260px;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+.swiper-button-next{
+    background-image: url('../img/logos/icon_arrow_right_hover.png');
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    right:260px;
+}
+
+.nav-container{ 
+    background: #fff;
+    -moz-box-shadow: 10px 10px 5px #189c8f;
+    box-shadow: 0px 0px 10px rgba(192, 218, 215, .8); 
+
+}
+.container {  
+    min-width: 1040px;   
+}
+.nav-container .navbar {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 100px; 
+} 
+.nav-container .navbar .right-info {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translate(0%,-50%);
+    font-size: 14px;
+    font-family: HelveticaNeueLTPro;
+    color: #676769;
+    letter-spacing: 0;
+}
+.nav-container .navbar-expand-xl .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 240px;
+}
+.nav-container .navbar-brand img{
+    width:25px;
+    height:28px;    
+}
+.nav-container .nav-link {
+    display: block;
+    margin-right: 40px;
+    padding: 0!important;
+    font-size: 14px;
+    color: rgb(103, 103, 105);
+    line-height: 39px;
+    height: 39px;
+}
+.nav-container .one{
+    font-size: 16px;
+}
+.nav-container .navbar-nav .active {
+    position: relative;
+}
+.nav-container .navbar-nav .active .nav-link,
+.nav-container .navbar-nav .nav-link:hover{
+    color: #009999;
+    font-weight: bold;
+}
+.swiper{
+    width: 100%;
+    height:460px;
+}
+.swiper img{
+    width: 100%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    width: 20px;
+    height: 2px;
+    border-radius: 0;
+}
+.swiper-pagination-bullet-active{
+    background: #4BDAD3;
+    width: 20px !important;
+} 
+.life{
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 200px; 
+    position: relative;
+}
+.life-one{
+    display: flex; 
+}
+.life h4{
+    line-height: 0px;
+}
+.life .life-left{
+    display: block;
+    width: 234px;
+    height: 1px;
+    margin-right: 40px;
+    background: #000;
+}
+.life .life-right{
+    display: block;
+    width: 234px;
+    height: 1px;
+    margin-left: 40px;
+    background: #000;
+}
+.life-two{
+    width: 274px;
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: absolute;
+    left:30%;
+    color: #727272;
+    font-family: SourceHanSansSC-Light;
+}
+.life-three{
+    width: 40px;
+    height: 4px;
+    margin:0 auto;
+    background:#4BDAD3;
+    position: absolute;
+    left:43.5%;
+    top:125%; 
+}
+.life-letter{
+    width: 217px;
+    height: 60px;
+    font-family:  HelveticaNeue-Light ;
+    color:#727272;
+    font-size: 30px;
+    position: absolute;
+    left:22%;
+    top:-46%;
+    opacity: .1;
+}
+.people{
+    width: 800px;
+    height: 170px;
+    margin:0 auto;
+    margin-top: 100px;
+}
+.people>img{
+    vertical-align:bottom;
+    margin-left: 50px;
+}
+.people .img-one{
+    animation-name: img1; /*动画名称*/
+    animation-duration: 2s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 0s; /*延迟时间*/
+}
+.people .img-two{
+    animation-name: img2; /*动画名称*/
+    animation-duration: 2s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 0.5s; /*延迟时间*/
+}
+.people .img-three{
+    animation-name: img3; /*动画名称*/
+    animation-duration: 2s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 1s; /*延迟时间*/
+}
+.people .img-four{
+    animation-name: img4; /*动画名称*/
+    animation-duration: 2s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 1.5s; /*延迟时间*/
+}
+.people .img-five{
+    animation-name: img5; /*动画名称*/
+    animation-duration: 2s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 2s; /*延迟时间*/
+}
+.people .img-six{
+    animation-name: img6; /*动画名称*/
+    animation-duration: 2s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 2.5s; /*延迟时间*/
+}
+.people .img-senven{
+    animation-name: img7; /*动画名称*/
+    animation-duration: 2s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 3s; /*延迟时间*/
+}
+@keyframes img1 {
+0% {
+    opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+    }
+    100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+@keyframes img2 {
+0% {
+    opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+    }
+    100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+@keyframes img3 {
+0% {
+    opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+    }
+    100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+@keyframes img4 {
+0% {
+    opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+    }
+    100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+@keyframes img5 {
+0% {
+    opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+    }
+    100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+@keyframes img6 {
+0% {
+    opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+    }
+    100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+@keyframes img7 {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+        }
+        50% {
+        opacity: 0.5; /*中间状态 透明度为0*/
+        }
+        100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+        }
+    }
+.life{
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 200px; 
+    position: relative;
+}
+.lifes{
+    width: 740px;
+}
+.life-one{
+    display: flex; 
+}
+.life-threes{
+   left:44.5%;
+}
+.life h4{
+    line-height: 0px;
+}
+.life .life-left1{
+    display: block;
+    width: 234px;
+    height: 1px;
+    margin-right: 10px;
+    background: #000;
+}
+.life .life-right1{
+    display: block;
+    width: 234px;
+    height: 1px;
+    margin-left: 10px;
+    background: #000;
+}
+.life-two1{
+    width: 289px;
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: absolute;
+    left:30%;
+    color: #727272;
+    font-family: SourceHanSansSC-Light;
+}
+.life-two2{
+    width: 335px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 16px;
+    position: absolute;
+    top:100%;
+    left:27%;
+    text-align: center;
+    color: #727272;
+    font-family: SourceHanSansSC-Light;
+}
+.life-three1{
+    width: 40px;
+    height: 4px;
+    margin:0 auto;
+    background:#4BDAD3;
+    position: absolute;
+    left:43.5%;
+    top:200%; 
+}
+.life-letter{
+    width: 217px;
+    height: 60px;
+    font-family:  HelveticaNeue-Light ;
+    color:#727272;
+    font-size: 30px;
+    position: absolute;
+    left:22%;
+    top:-46%;
+    opacity: .1;
+}
+.service{
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+    padding-left: 115px;
+
+}
+.service>img{
+    width: 296px;
+    height: 260px; 
+}
+.love{
+    width: 520px;
+    text-align: center;
+    height: 60px;
+    margin:auto;
+    margin-top: 150px; 
+}
+.like{ 
+    height:23px; 
+    font-size:24px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    text-align: center;
+    color:rgba(0,0,0,1);
+}
+.battle{ 
+    height:14px;
+    font-size:13px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(114,114,114,1);
+    line-height:24px;
+}
+.saying{
+    width: 100%;
+    margin-top: 150px;
+    position: relative;
+}
+.chinese{
+    color:white;
+    position: absolute;
+    top:10%;
+    left:20%;
+}
+.chinese p > span{
+    font-size: 20px;
+}
+.chinese .frist{
+    margin-bottom: 30px;
+}
+.author{
+    position: absolute;
+    bottom:10%;
+    right: 14%;
+    color:white;
+}
+.saying>img{
+    width: 100%;
+}
+/* 底部 */
+.footer{
+    margin-top: 40px;
+    background:rgba(252,252,252,1);
+}
+.footer .container {
+    padding: 40px 15px;
+}
+.footer .container h4 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-family: "PingFang SC Heavy", "PingFang SC Regular", "Microsoft YaHei"; 
+}
+.footer .container p {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #000;
+} 
+.footer .footer-info { 
+    line-height: 40px;
+    color: #000;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    border-top:1px solid #000;
+}
+
+/* 产品 */
+.life-product{
+    margin-top: 100px;
+}
+.list,.list-one{
+    margin:0 auto;
+    width: 792px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.list li,.list-one li{
+    text-align: center;
+}
+.list li>p,.list-one li>p{
+    margin-top: 10px;
+}
+.list-one{
+    margin-top: 50px;
+}
+.list li :hover  .product-six{
+    display: block;
+    background: red;
+}
+.gif{
+    margin-top: 100px;
+    position: relative;
+}
+.gif-img{
+    width: 780px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.gif-img5{
+    position: absolute;
+    top:0%;
+    left:20%;
+    animation-name: car;
+    display: flex;
+    justify-items: flex-start;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes car{
+    from{
+        left:200px;
+    }
+    to{
+        left:1100px;
+    }
+    
+}
+.prodcut-six{
+    width: 852px;
+    height: 200px;
+    border:1px solid #69CBB3;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+
+}
+.prodcut-six .one{ 
+    margin-left: 30px; 
+    margin-top: 30px;
+    position: relative;
+    width:240px;
+    height:60px;
+    background:rgba(105,203,179,0.1);
+}
+.prodcut-six .two{
+    margin-left: 30px;  
+    position: relative;
+    width:240px;
+    height:60px;
+    background:rgba(105,203,179,0.1);
+}
+.product-intestine{
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.product-hongji{
+    font-size: 12px;
+    color:gray;
+    position: absolute;  
+    top:55%;
+    left:13%;
+}
+.prodcut-six .two{
+    margin-left: 30px;  
+    width:240px;
+    height:60px;
+    background:rgba(105,203,179,0.1);
+}
+.life-one-right1{
+    display: block;
+    width: 234px;
+    height: 1px; 
+    background: #000;
+}
+.life-one h4{
+    line-height: 0px;
+}
+.life-one-left1{
+    display: block;
+    width: 234px;
+    height: 1px; 
+    background: #000;
+}
+.product-life{
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+.product-three{
+    width: 40px;
+    height: 4px;
+    margin: 0 auto;
+    background: #4BDAD3;
+    position: absolute;
+    left: 43.5%;
+    top: 75%;
+}
+.product-two{
+    width: 519px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 14px ;
+    position: absolute;
+    top: 120%;
+    left: 18%;
+    text-align: center;
+    color: #727272;
+    font-family: SourceHanSansSC-Light;
+}
+.product-prevention{
+    width: 700px;
+    height: 80px;
+    margin:0 auto;
+    margin-top: 250px;
+    display: flex;
+    position: relative;
+}
+.product-prevention li{
+    width: 22%;
+    text-align: center;
+}
+.product-icon{
+    position: absolute;
+    top:-45%;
+    right:26.5%;
+}
+.product-top{
+    position: absolute;
+    top:-100%;
+    right: 19%;
+    font-size:14px ;
+    border:1px solid #84CBC1;
+    padding:5px;
+    border-radius: 5px;
+}
+.product-line{
+    width: 850px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border:2px dashed rgba(190,190,190,1);
+}
+.product-solid{
+    z-index: 100;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-top: 18px;
+    margin-left: 55px; 
+}
+.product-solid span{
+    display: inline-block;
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #84CBC1;
+}
+.product-icon01{
+    position: absolute;
+    bottom:-180%;
+    left:32%;
+}
+.product-top01{
+    position: absolute;
+    bottom:-255%;
+    left:25%;
+    font-size:14px ;
+    border:1px solid #84CBC1;
+    padding:5px;
+    border-radius: 5px;
+}
+.product-lifes{
+    margin-top: 300px;
+    position: relative;
+}
+.product-life-three{
+    width: 40px;
+    height: 4px;
+    margin:0 auto;
+    background:#4BDAD3;
+    position: absolute;
+    left:41%;
+    top:70%; 
+}
+.service-life{
+    width: 274px;
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: absolute;
+    left: 41%;
+    color: #727272;
+    font-family: SourceHanSansSC-Light;
+}
+.service-list{
+    list-style: none;
+    width: 1000px;
+    height: 170px; 
+    margin-left: 40px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.service-list li{
+    width: 16.5%;
+    text-align: center;
+}
+.service-list li h6{
+    margin-top: 10px;
+}
+.service-img{
+    position: relative;
+}
+.service-img img{
+    width: 100%;
+}
+.service-img1{
+    position: relative;
+    animation-name:mymove1;
+    animation-duration:2s;
+    animation-delay: 0s; /*延迟时间*/
+}
+@keyframes mymove1 /* 对应animation-name，里面为执行的动画*/
+{
+from {top:100px;}/*执行动画的初始位置*/
+to {top:0px;}/*动画结束位置*/
+0% {
+opacity: 0.1; /*初始状态 透明度为10%*/
+}
+50% {
+opacity: 0.5; /*中间状态 透明度为50%*/
+}
+100% {
+opacity: 1; /*结尾状态 不透明*/
+}
+}
+.service-img2{
+    position: relative;
+    animation-name:mymove2;
+    animation-duration:2s;
+    animation-delay: 1.5s; /*延迟时间*/
+}
+@keyframes mymove2 /* 对应animation-name，里面为执行的动画*/
+{
+from {top:100px;}/*执行动画的初始位置*/
+to {top:0px;}/*动画结束位置*/
+0% {
+opacity: 0.1; /*初始状态 透明度为10%*/
+}
+50% {
+opacity: 0.5; /*中间状态 透明度为50%*/
+}
+100% {
+opacity: 1; /*结尾状态 不透明*/
+}
+}
+.service-img3{
+    position: relative;
+    animation-name:mymove3;
+    animation-duration:2s;
+    animation-delay: 2.5s; /*延迟时间*/
+}
+@keyframes mymove3 /* 对应animation-name，里面为执行的动画*/
+{
+from {top:100px;}/*执行动画的初始位置*/
+to {top:0px;}/*动画结束位置*/
+0% {
+opacity: 0.1; /*初始状态 透明度为10%*/
+}
+50% {
+opacity: 0.5; /*中间状态 透明度为50%*/
+}
+100% {
+opacity: 1; /*结尾状态 不透明*/
+}
+}
+.service-img4{
+    position: relative;
+    animation-name:mymove4;
+    animation-duration:2s;
+    animation-delay: 3.5s; /*延迟时间*/
+}
+@keyframes mymove4 /* 对应animation-name，里面为执行的动画*/
+{
+from {top:100px;}/*执行动画的初始位置*/
+to {top:0px;}/*动画结束位置*/
+0% {
+opacity: 0.1; /*初始状态 透明度为10%*/
+}
+50% {
+opacity: 0.5; /*中间状态 透明度为50%*/
+}
+100% {
+opacity: 1; /*结尾状态 不透明*/
+}
+}
+.service-img5{
+    position: relative;
+    animation-name:mymove5;
+    animation-duration:2s;
+    animation-delay: 4.5s; /*延迟时间*/
+}
+@keyframes mymove5 /* 对应animation-name，里面为执行的动画*/
+{
+from {top:100px;}/*执行动画的初始位置*/
+to {top:0px;}/*动画结束位置*/
+0% {
+opacity: 0.1; /*初始状态 透明度为10%*/
+}
+50% {
+opacity: 0.5; /*中间状态 透明度为50%*/
+}
+100% {
+opacity: 1; /*结尾状态 不透明*/
+}
+}
+.service-img6{
+    position: relative;
+    animation-name:mymove6;
+    animation-duration:2s;
+    animation-delay: 5.5s; /*延迟时间*/
+}
+@keyframes mymove6 /* 对应animation-name，里面为执行的动画*/
+{
+from {top:100px;}/*执行动画的初始位置*/
+to {top:0px;}/*动画结束位置*/
+0% {
+opacity: 0.1; /*初始状态 透明度为10%*/
+}
+50% {
+opacity: 0.5; /*中间状态 透明度为50%*/
+}
+100% {
+opacity: 1; /*结尾状态 不透明*/
+}
+}
+.service-tell{
+    width:381px;
+    height:23px;
+    font-size:24px;
+    color:white;
+    font-family:SourceHanSansSC-Light;
+    position: absolute;
+    top:30%;
+    left: 35%;
+}
+.service-me{
+    width:500px;
+    height:18px;
+    position: absolute;
+    top:55%;
+    left: 31%;
+    font-size:18px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(254,254,254,1);
+    opacity:0.5;
+} 
+
+.service-lifes{
+    width: 650px; 
+}
+.service-three{
+    width: 40px;
+    height: 4px;
+    margin: 0 auto;
+    background: #4BDAD3;
+    position: absolute;
+    left: 46.5%;
+    top: 120%;
+}
+.service-life-one{
+    width: 274px;
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: absolute;
+    left: 38%;
+    color: #727272;
+    font-family: SourceHanSansSC-Light;
+}
+.service-photo{
+    width: 800px;
+    margin:0 auto;
+    display: flex;
+    height: 120px;
+    list-style: none; 
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;    
+}
+.service-photo li{
+    width: 25%;
+}
+.service-photo li p{
+    margin:5px -1px;
+}
+.server-choose{
+    width:730px;
+}
+.server-us{
+    left:44%;
+}
+.server-three{
+    left:47.5%;
+}
+.partne-img{
+    width: 100%;
+    position: relative;
+    margin-top:150px;
+}
+.partne-img .img{
+    width: 100%;
+}
+.partner{
+    position: absolute; 
+    top:11%;
+    left:40%;
+    width:320px;
+    height:385px;
+    background:rgba(255,255,255,1);
+    border-radius:10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.partner h5{
+    padding-top: 12px;
+}
+.partner p{
+    font-size: 14px;
+}
+.partner-input{
+    width: 100%;
+}
+.partner-input input{
+    width: 90%;
+    margin:10px 0;
+    outline: none;
+    border:0;
+}
+.partner-input span{
+    display: inline-block;
+    width: 80%;
+    border-bottom:1px solid #ccc; 
+}
+.partner-info{
+    display: block;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.partner-btn{
+    margin-top: 35px;
+}
+/* 见山会诊 */ 
+.bigexplain{
+    width: 100%; 
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.explain .oddnum{
+    width:225px;
+    height:225px;
+    background:rgba(132,203,193,1);
+    border-radius:10px;
+    line-height: 225px;
+    text-align: center;
+    position: relative;
+}
+.explain .evennum{
+    width:225px;
+    height:225px;
+    border:2px solid rgba(132,203,193,1);
+    border-radius:10px;
+}
+.explain li span{
+    position: absolute;
+    left: 45%;
+    top:-4%;
+    font-size: 48px;
+    color:#fff;
+}
+.bigexplain .explain {
+    margin-top: 20px;
+    width: 100%; 
+    display: flex; 
+    justify-content:space-around;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+.explain .evennum h5{
+    font-size: 16px;
+    margin-top:40px;
+}
+.explain .evennum .content{
+    margin-top: 20px;
+
+}
+.explain .evennum .content span{
+    font-size: 14px;
+    position: unset;
+    line-height: 35px;
+    display: block;
+    color: #666666
+}
+
+/* 关于我们 */
+.we{
+    margin-top: 100px;
+    position: relative; 
+}
+.us{
+    text-align: center; 
+    width: 700px;
+    margin: 0 auto;
+}
+.us-top{
+    display: flex;
+    justify-content:center;
+}
+.us .line{ 
+    width: 234px; 
+    height: 1px;
+    background: #303030;
+    border:1px solid #303030;
+}
+.aboutus{
+    line-height: 0;
+    padding: 0 50px; 
+    font-size: 24px;
+    font-family:SourceHanSansSC-Light;
+}
+.letter{
+    position: absolute;
+    color: #727272;
+    opacity: .1;
+    font-size: 30px;
+    top: -30%;
+    left: 39%;
+}
+.letter-two{
+    position: absolute;
+    color: #727272;
+    opacity: .1;
+    font-size: 30px;
+    top: 15%;
+    left: 39%;
+}
+.capitalization{
+    color: #727272;
+    font-size: 16px;
+}
+.green{
+    width: 40px;
+    height: 4px;
+    background: #84CBC1;
+    margin:0 auto;
+}
+.word-content{
+    margin-top: 100px;
+}
+.word{
+    text-align: center;
+    color:#727272;
+    font-size: 14px;
+}
+.word-center{
+    margin-top: 50px;
+}
+.word-bottom{
+    margin-top: 50px;
+}
+.swiper-ceo{
+    width: 100%;
+    height: 260px;
+    margin-top: 60px;
+}
+.swiper-container-ceo{
+    width:698px;
+    height:230px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(85,85,85,1);
+    border-radius:10px;
+
+} 
+.swiper-slide{
+    width: 100%;
+    display: flex;
+}
+.swiper-slide .left{
+    width: 30%;
+    text-align: center;
+    line-height: 230px;
+}
+.swiper-slide .right{
+    flex:1;
+    padding: 24px 0;
+}
+.swiper-slide .left img{
+    width: 151px;
+    height: 181px;
+}
+.swiper-slide .right .founder{
+    position: relative;
+    display: flex;
+}
+.swiper-slide .right .founders{
+    padding-left:5px;
+    width:100px;
+    height:18px;
+    font-size:18px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(184,184,184,1);
+}
+.swiper-slide .right .founder .ceo{
+    width:60px;
+    height:18px;
+    font-size:18px;
+    line-height: 10px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(34,34,34,1);
+}
+.swiper-slide .right .founder .square{
+    width:60px;
+    height:2px;
+    background:rgba(132,203,193,1);
+    position: absolute;
+    top:50%;
+}
+.swiper-slide .right .founder .squares{
+    width:38px;
+    height:2px;
+    background:rgba(132,203,193,1);
+    position: absolute;
+    top:50%;
+}
+.swiper-slide .right  .founder-word {
+    margin-top: 30px;
+    width:380px;
+    height:81px;
+}
+.swiper-slide .right .founder-word p{
+    color:rgba(102,102,102,1);
+    font-size:14px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+}
+.corporatr{
+    width: 630px; 
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.corporatr .first-one{ 
+    margin: 25px 0;
+    width: 630px;
+    display: flex;
+}
+.corporatr .first-one .left{
+    position: relative;
+    width: 250px;
+    display: flex;
+}
+.corporatr .first-one .right{
+    flex:1;
+    padding-left: 130px;
+    position: relative;
+}
+.corporatr .first-one .left .corporatr-life{
+    position: absolute;
+    top:40%;
+    left: 18%;
+    width:205px;
+    height:36px;
+    font-size:16px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(102,102,102,1);
+}
+.corporatr .first-one .left .corporatr-mission{
+    position: absolute;
+    top:12%;
+    left: 70.5%;
+    width:120px;
+    height:34px;
+    font-size:36px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(26,26,26,1);
+    opacity:0.1;
+}
+.corporatr .first-one .left .corporatr-mission-value{
+    position: absolute;
+    top:12%;
+    left: 50.5%;
+    width:120px;
+    height:34px;
+    font-size:36px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(26,26,26,1);
+    opacity:0.1;
+}
+.corporatr .first-one .left .corporatr-life-trust{
+    position: absolute;
+    top:40%;
+    left: 2%;
+    width:235px;
+    height:36px;
+    font-size:16px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(102,102,102,1);
+    justify-items: flex-end;
+}
+.corporatr .first-one .left .corporatr-life-trusts{
+    position: absolute;
+    top:50%;
+    left: 75%;
+    width:80px;
+    height:36px;
+    font-size:16px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(102,102,102,1);
+    justify-items: flex-end;
+}
+.corporatr .first-one .right .corporatr-healthy{
+    position: absolute;
+    top:50%;
+    width:160px;
+    height:16px;
+    font-size:16px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(102,102,102,1);
+}
+.corporatr .first-one .right .corporatr-vision{
+    position: absolute;
+    top:25%;
+    width:80px;
+    height:32px;
+    font-size:36px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(26,26,26,1);
+    opacity:0.1;
+}
+.cognition{  
+    margin-top: 100px;
+}
+.cognition .cognition-list{ 
+    width: 800px;
+    margin: 0 auto;
+    display: flex; 
+}
+.cognition .cognition-list li{
+    width: 25%;
+    text-align: center;
+}
+.cognition .cognition-list li p{
+    margin-top: 20px;
+}
+/* 加入我们 */
+.photo .service-photo{
+    margin-top: 100px;
+} 
+.service-img .word .team{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width:660px;
+    height:16px;
+    font-size:16px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(254,254,254,1);
+}
+.service-img .word .seaman{
+    position: absolute;
+    left:37%;
+    top:40%;
+    width:462px;
+    height:16px;
+    font-size:16px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(254,254,254,1);
+    opacity:0.5;
+}
+.service-img .word .if{
+    position: absolute;
+    top:70%;
+    left:40%;
+    width:350px;
+    height:18px;
+    font-size:18px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(254,254,254,1);
+}
+.recruit{
+    margin-top: 100px; 
+}
+.recruit .position{
+    width: 848px;
+    margin: 0 auto;
+}
+.recruit .position li{
+    border-bottom:1px solid #ccc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.recruit .position .one .first-one{
+    width:111px;
+    height:18px;
+    font-size:18px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(132,203,193,1)
+}
+.recruit .position .one .first-two{
+    padding-left: 20px;
+    width:155px;
+    height:18px;
+    font-size:18px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(231,149,83,1);
+}
+.recruit .position .two{
+    width:100px;
+    height:14px;
+    font-size:14px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(136,136,136,1);
+} 
+.recruit .recruit-btn{  
+    margin: 0 auto; 
+    margin-top: 50px;
+    line-height: 30px;
+    text-align: center;
+    width:120px;
+    height:34px;
+    border:1px solid rgba(153,153,153,1);
+}
+.recruit .recruit-btn .many{
+    width:74px;
+    height:18px;
+    font-size:18px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(0,0,0,1);
+}
+.atmosphere{
+    margin-top: 100px;
+}
+.atmosphere-list{
+    display: flex;
+    width: 950px;
+    margin:0 auto;
+}
+.atmosphere-list .background{
+    position: relative;
+    display: block;
+    width:225px;
+    height:225px; 
+    background:rgba(132,203,193,1);
+    text-align: center;
+    line-height: 225px;
+}
+.atmosphere-list .background .teams{
+    position: absolute;
+    left:30%;
+    width:100px;
+    height:18px;
+    font-size:18px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(255,255,255,1);
+}
+/* 渠道服务 */
+.photos{
+    margin-top: 50px;
+}
+.photo .service-photos{
+    width: 1000px;
+}
+.train{
+    margin: 100px 0;
+}
+.train-list{
+    width: 850px;
+    margin: 0 auto;
+    display: flex;
+} 
+.train-list li:not(:first-child){ 
+    margin-left: 12px;
+}
+.us .us-top .lines{
+    width: 170px;
+}
+.us .us-top .line-ltter{
+    width: 138px;
+}
+.us .us-top .one{
+    padding:0 40px;
+}
+.gene{
+    margin-top: 100px;
+    font-size: 0;
+
+}
+.gene-img{
+    width: 891px;
+    display: flex;
+    margin: 0 auto;
+    justify-content:center;
+}
+.gene-img img{
+    width: 33.3%; 
+}
+
+/* 合作机构 */
+.bigfish{
+    margin-top: 100px;
+}
+.fishimg{
+    width: 574px;
+    margin: 0 auto;
+}
+.outside{
+    position: relative;    
+}
+.outside .aws{
+    position: absolute;
+    top:10%;
+    right: 58%;
+    width:54px;
+    height:25px;
+}
+.outside .lhjk{
+    position: absolute;
+    top:16%;
+    right: 53%;
+    width:44px;
+    height:17px;
+}
+.outside .rysw{
+    position: absolute;
+    top:20%;
+    right: 46%;
+    width:106px;
+    height:23px;
+}
+.outside .bsn{
+    position: absolute;
+    top:25%;
+    right: 44%;
+    width:58px;
+    height:31px;
+}
+.outside .jxjy{
+    position: absolute;
+    top:30%;
+    right: 40%;
+    width:29px;
+    height:32px;
+}
+.outside .ycsw{
+    position: absolute;
+    top:31%;
+    right: 50%;
+    width:56px;
+    height:26px;
+}
+.outside .jh{
+    position: absolute;
+    top:36%;
+    right: 35%;
+    width:63px;
+    height:13px;
+}
+.outside .ezkt{
+    position: absolute;
+    top:40%;
+    right: 30%;
+    width:99px;
+    height:30px;
+}
+.outside .yx{
+    position: absolute;
+    top:46%;
+    right: 20%;
+    width:105px;
+    height:35px;
+}
+.outside .hjyx{
+    position: absolute;
+    top:38%;
+    right: 51%;
+    width:74px;
+    height:21px;
+}
+.outside .jw{
+    position: absolute;
+    top:39%;
+    right: 43%;
+    width:50px;
+    height:23px;
+}
+.outside .fs{
+    position: absolute;
+    top:43%;
+    right: 50%;
+    width:124px;
+    height:36px;
+}
+.outside .dj{
+    position: absolute;
+    top:48%;
+    right: 40%;
+    width:90px;
+    height:17px;
+}
+.outside .ltter-hjyx{
+    position: absolute;
+    top:52%;
+    right: 48%;
+    width:41px;
+    height:12px;
+}
+.outside .lmjt{
+    position: absolute;
+    top:46%;
+    right: 33%;
+    width:48px;
+    height:22px;
+}
+.outside .hd{
+    position: absolute;
+    top:53%;
+    right: 25%;
+    width:44px;
+    height:21px;
+}
+.outside .sfjm{
+    position: absolute;
+    top:55%;
+    right: 32%;
+    width:99px;
+    height:23px;
+}
+.outside .gk{
+    position: absolute;
+    top:56%;
+    right:47%;
+    width:110px;
+    height:30px;
+}
+.outside .fsz{
+    position: absolute;
+    top:60%;
+    right:40%;
+    width:63px;
+    height:35px;
+}
+.outside .zkjy{
+    position: absolute;
+    top:68%;
+    right:39%;
+    width:108px;
+    height:13px;
+}
+.outside .lt{
+    position: absolute;
+    top:72%;
+    right:44%;
+    width:60px;
+    height:18px;
+}
+.outside .hys{
+    position: absolute;
+    top:76%;
+    right:47%;
+    width:82px;
+    height:22px;
+}
+.outside .ym{
+    position: absolute;
+    top:82%;
+    right:51%;
+    width:82px;
+    height:29px;
+}
+.data{
+    margin-top: 100px;
+    position: relative;
+}
+.data img{
+    width: 100%;
+}
+.lotdata{
+    width: 713px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.datas{ 
+    width: 710px;
+    position: absolute;
+    text-align: center;
+    top:30%;
+    left: 15%;
+}
+.datas .lotdata{
+    margin-bottom: 40px;
+}
+.datas .lotdata li{
+    width:100px;
+    height:21px;
+    font-size:24px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(136,136,136,1);
+}
