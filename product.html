@@ -12,58 +12,83 @@
 </head>
 <body> 
 <div class="nav-container fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-xl">
-                <!-- Brand -->
-                <a class="navbar-brand" href="#"> 
-                    <img src="img/logos/易得好康新logo.png" alt="">
-                </a> 
-                <!-- Toggler/collapsibe Button -->
-                <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">-->
-                    <!--<span class="navbar-toggler-icon"></span>-->
-                <!--</button>--> 
-                <!-- Navbar links -->
-                <div class="navbar-links" id="collapsibleNavbar">
-                    <ul class="navbar-nav justify-content-between">
-                        <li class="nav-item active">
-                            <a class="nav-link one" href="index.html">首页</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="product.html">产品</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">服务</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="MDHcare.html">见山会诊</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">关于我们</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="service.html">城市合伙人</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-info">
-                    <div class="phone-info">
-                        微信服务
-                    </div> 
-                </div>
-            </nav>
-        </div>
+    <div class="container">
+        <nav class="navbar navbar-expand-xl">
+            <a class="navbar-brand" href="#"> 
+                <img src="img/logos/易得好康新logo.png" alt="">
+            </a> 
+            <div class="navbar-links" id="collapsibleNavbar">
+                <ul class="navbar-nav justify-content-between">
+                    <li class="nav-item ">
+                        <a class="nav-link one" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="product.html">产品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="channel.html">服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MDHcare.html">见山会诊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">城市合伙人</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-info">
+                <div class="phone-info">
+                    微信服务
+                    <div class="barcode">
+                        <img src="./img/imgs/二维码.jpg" alt="">
+                        <div class="san"></div>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    </div>
 </div>
 <div class="swiper">
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="img/banner效果图/见山.jpg" alt=""> 
+                <img src="./img/banner效果图/见山.jpg" alt=""> 
             </div>
             <div class="swiper-slide">
-                <img src="img/banner效果图/见山.jpg" alt="">
+                <img src="./img/banner效果图/boss.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="img/banner效果图/见山.jpg" alt="">
+                <img src="./img/banner效果图/关于我们.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner效果图/合伙人.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner效果图/合作机构.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner效果图/年纪轻轻.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner效果图/心血管.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner效果图/渠道服务.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner效果图/看癌.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner效果图/肿瘤个性化.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner效果图/遗传.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner效果图/首页易得好.jpg" alt="">
             </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -75,11 +100,11 @@
     <div class="container">
         <div class="us"> 
             <div class="us-top">
-                <p class="line lines"></p>
+                <p class="line"></p>
                 <p class="letter">RECRUITMENT</p>
                 <p class="letter-two">POSITION</p>
                 <p class="aboutus">全生命周期产品</p>
-                <p class="line lines"></p>
+                <p class="line"></p>
             </div>
             <p class="capitalization">临床科室全覆盖   疾病种类全覆盖</p>
             <div class="green"></div>
@@ -90,90 +115,272 @@
     <div class="container">
         <ul class="list">
             <li class="li-one">
-                <img src="./img/imgs/icon_defult.png" alt="">
+                <img class="defult-1" src="./img/imgs/icon_defult.png" alt="">
+                <img class="icon-1" style="display: none" src="./img/imgs/icon_1.png" alt="">
                 <p>内科</p>
             </li>
-            <li>
-                <img src="./img/imgs/icon_defult.png" alt="">
-                <p>内科</p>
+            <li class="li-two">
+                <img class="defult-2" src="./img/imgs/icon_2green.png" alt="">
+                <img class="icon-2" style="display: none" src="./img/imgs/icon_2.png" alt="">
+                <p>外科</p>
             </li>
-            <li>
-                <img src="./img/imgs/icon_defult.png" alt="">
-                <p>内科</p>
+            <li class="li-three">
+                <img class="defult-3" src="./img/imgs/icon_3green.png" alt="">
+                <img class="icon-3" style="display: none" src="./img/imgs/icon_3.png" alt="">
+                <p>妇产科</p>
             </li>
-            <li>
-                <img src="./img/imgs/icon_defult.png" alt="">
-                <p>内科</p>
+            <li class="li-four">
+                <img class="defult-4" src="./img/imgs/icon_4green.png" alt="">
+                <img class="icon-4" style="display: none" src="./img/imgs/icon_4.png" alt="">
+                <p>儿科</p>
             </li>
-            <li>
-                <img src="./img/imgs/icon_defult.png" alt="">
-                <p>内科</p>
+            <li class="li-five">
+                <img class="defult-5" src="./img/imgs/icon_5green.png" alt="">
+                <img class="icon-5" style="display: none" src="./img/imgs/icon_5.png" alt="">
+                <p>肿瘤科</p>
             </li>
         </ul>
-        <div class="prodcut-six">
-            <div class="one">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
+        <div class="product-none product-none1">
+            <div class="prodcut-six hover-six">
+                <div class="one">
+                    <p class="product-intestine">血清抗体PLA2R检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">急性白血病诊断</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">人类MYD88基因突变检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">骨髓染色体核型分析</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">消化道癌症个体化用药基因检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">肠道菌群检测</p>
+                    <p class="product-hongji"></p>
+                </div>
             </div>
-            <div class="one">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
+        </div>
+        <div class="product-none product-none2">
+            <div class="prodcut-six hover-six">
+                <div class="one">
+                    <p class="product-intestine">软骨发育不全（FGFR3基因突变位点检测）</p>
+                    <p class="product-hongji">成骨不全</p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">白内障基因检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">甲状腺免疫7项</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">遗传性骨病基因检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">肾小球疾病</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">遗传性骨病基因检测</p>
+                    <p class="product-hongji"></p>
+                </div>
             </div>
-            <div class="one">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
+        </div>
+        <div class="product-none product-none3">
+            <div class="prodcut-six hover-six">
+                <div class="one">
+                    <p class="product-intestine">子痫前期预测及管理</p>
+                    <p class="product-hongji">PIGF标记物检测</p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">无创产前基因检测</p>
+                    <p class="product-hongji">用于胎儿非整倍风险预测</p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">叶酸代谢基因检测</p>
+                    <p class="product-hongji">个人叶酸代谢情况</p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">不孕14项检测</p>
+                    <p class="product-hongji">辅助诊断不孕不育</p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">流产风险基因检测</p>
+                    <p class="product-hongji">辅助判断流产风险</p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">单基因遗传病筛查</p>
+                    <p class="product-hongji">辅助医生做出精准的遗传病临床诊断</p>
+                </div>
             </div>
-            <div class="two">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
+        </div>
+        <div class="product-none product-none4">
+            <div class="prodcut-six hover-six">
+                <div class="one">
+                    <p class="product-intestine">儿童安全用药基因检测</p>
+                    <p class="product-hongji">儿童安全用药基因检测</p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">新生儿遗传代谢病检测</p>
+                    <p class="product-hongji">43种代谢物质，超过40种遗传代谢病</p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">遗传性耳聋基因检测</p>
+                    <p class="product-hongji">遗传性耳聋的辅助诊断</p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">儿童哮喘基因无创检测</p>
+                    <p class="product-hongji">评估风险，辅助临床诊断，早防早诊早治</p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">亲子鉴定</p>
+                    <p class="product-hongji">亲缘关系</p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">新生儿重症联合免疫缺陷SCID</p>
+                    <p class="product-hongji">降低新生儿死亡率</p>
+                </div>
             </div>
-            <div class="two">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
-            </div>
-            <div class="two">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
+        </div>
+        <div class="product-none product-none5">
+            <div class="prodcut-six hover-six">
+                <div class="one">
+                    <p class="product-intestine">HPV基因分型检测</p>
+                    <p class="product-hongji">检测宫颈癌病变的重要手段</p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">胃癌早期筛查-miRNA</p>
+                    <p class="product-hongji">胃癌早期筛查</p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">P16单克隆抗体检测</p>
+                    <p class="product-hongji">识别潜在的高度病变</p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">肺小结节良恶性辅助诊断</p>
+                    <p class="product-hongji">辅助肿瘤早期诊断</p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">前列腺早期筛查</p>
+                    <p class="product-hongji">PCA3</p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">结直肠癌早期筛查</p>
+                    <p class="product-hongji">癌前病变或结直肠癌早期筛查</p>
+                </div>
             </div>
         </div>
         <ul class="list-one">
-            <li>
-                <img src="./img/imgs/icon_defult06.png" alt="">
-                <p>内科</p>
+            <li class="li1-one">
+                <img class="defult-6" src="./img/imgs/icon_defult06.png" alt="">
+                <img class="icon-6" style="display: none" src="./img/imgs/icon_6.png" alt="">
+                <p>营养保健</p>
             </li>
-            <li>
-                <img src="./img/imgs/icon_defult06.png" alt="">
-                <p>内科</p>
+            <li  class="li1-two">
+                <img class="defult-7" src="./img/imgs/icon_7green.png" alt="">
+                <img class="icon-7" style="display: none"  src="./img/imgs/icon_7.png" alt="">
+                <p>药剂科</p>
             </li>
-            <li>
-                <img src="./img/imgs/icon_defult06.png" alt="">
-                <p>内科</p>
+            <li  class="li1-three">
+                <img class="defult-8" src="./img/imgs/icon_8green.png" alt="">
+                <img class="icon-8" style="display: none" src="./img/imgs/icon_8.png" alt="">
+                <p>其他</p>
             </li>
+            <li  class="li1-three"></li>
+            <li  class="li1-three"></li>
         </ul>
-        <div class="prodcut-six">
-            <div class="one">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
+        <div class="product-none product-none6">
+            <div class="prodcut-six hover-six">
+                <div class="one">
+                    <p class="product-intestine">人体氨基酸检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">孕期营养元素</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">十四项维生素检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">微量元素6项</p>
+                    <p class="product-hongji">锌铁钙铜铅</p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">单项维生素D</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">人体类固醇激素检测</p>
+                    <p class="product-hongji"></p>
+                </div>
             </div>
-            <div class="one">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
+        </div>
+        <div class="product-none product-none7">
+            <div class="prodcut-six hover-six">
+                <div class="one">
+                    <p class="product-intestine">高血压用药基因检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">高血脂类用药基因检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">糖尿病用药基因检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">三高慢病用药基因检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">马凡式综合症</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">肥厚性心肌病</p>
+                    <p class="product-hongji"></p>
+                </div>
             </div>
-            <div class="one">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
-            </div>
-            <div class="two">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
-            </div>
-            <div class="two">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
-            </div>
-            <div class="two">
-                <p class="product-intestine">肠道微生物检测</p>
-                <p class="product-hongji">基于宏基因组</p>
+        </div>
+        <div class="product-none product-none8">
+            <div class="prodcut-six hover-six">
+                <div class="one">
+                    <p class="product-intestine">抗衰老能力检测</p>
+                    <p class="product-hongji">抗衰老能力相关基因检测</p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">皮肤特质</p>
+                    <p class="product-hongji">晒黑反应、雀斑、太阳斑等</p>
+                </div>
+                <div class="one">
+                    <p class="product-intestine">美丽基因套组</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">肥胖基因检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">肠道健康保护力检测</p>
+                    <p class="product-hongji"></p>
+                </div>
+                <div class="two">
+                    <p class="product-intestine">修复+抗炎+保湿</p>
+                    <p class="product-hongji"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -183,14 +390,14 @@
         <div class="us"> 
             <div class="us-top">
                 <p class="line line-ltter"></p>
-                <p class="letter">DISEASE</p>
-                <p class="letter-two">DEVELOPMENT</p>
-                <p class="aboutus">疾病发展--适用基因检测产品</p>
+                <p class="letter-hard">DISEASE</p>
+                <p class="letter-two-hard">DEVELOPMENT</p>
+                <p class="aboutus-hard">疾病发展--适用基因检测产品</p>
                 <p class="line line-ltter"></p>
             </div>
-            <p class="capitalization">除了外伤，一切疾病都与基因有关。每个人生来都携带患有某些疾病的“内因”。
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;———利根川进博士（诺贝尔生理学奖获得者</p>
-            <div class="green"></div>
+            <div class="green green-line"></div>
+            <p class="capitalization">&ensp;&ensp;&ensp;除了外伤，一切疾病都与基因有关。每个人生来都携带患有某些疾病的“内因”。
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;———利根川进博士（诺贝尔生理学奖获得者)&ensp;&ensp;&ensp;</p>
         </div>
     </div>
 </div>
@@ -210,19 +417,19 @@
                 <h6 class="product-zi">疾病早期</h6>
             </li>
             <li>
-                <img src="./img/imgs/icon_01.png" alt="">
+                <img src="./img/imgs/icon_03.png" alt="">
                 <p class="product-solid"><span></span></p>
                 <h6 class="product-zi">疾病发展期</h6>
             </li>
             <li>
-                <img src="./img/imgs/icon_01.png" alt="">
+                <img src="./img/imgs/icon_04.png" alt="">
                 <img class="product-icon" src="./img/imgs/arrow_left-022.png" alt="">
                 <p class="product-top">体检：早筛及预防</p>
                 <p class="product-solid"><span></span></p>
                 <h6 class="product-zi">疾病治疗期</h6>
             </li>
             <li>
-                <img src="./img/imgs/icon_01.png" alt="">
+                <img src="./img/imgs/icon_05.png" alt="">
                 <p class="product-solid"><span></span></p>
                 <h6 class="product-zi">疾病复发监控期</h6>
             </li>
@@ -234,11 +441,11 @@
     <div class="container">
         <div class="us"> 
             <div class="us-top">
-                <p class="line line-ltter"></p>
-                <p class="letter">GENE </p>
-                <p class="letter-two">DETECTION</p>
+                <p class="line"></p>
+                <p class="letter-gene">GENE </p>
+                <p class="letter-gene-two">DETECTION</p>
                 <p class="aboutus">基因检测流程</p>
-                <p class="line line-ltter"></p>
+                <p class="line"></p>
             </div>
             <p class="capitalization"></p>
             <div class="green"></div>
@@ -248,74 +455,73 @@
 <div class="gif">
     <div class="container">
         <div class="gif-img">
-            <img class="gif-img1" src="./img/gif/动图1.gif" alt="">
-            <img class="gif-img2" src="./img/gif/动图2.gif" alt="">
-            <img class="gif-img3" src="./img/gif/动图3.gif" alt="">
-            <img class="gif-img4" src="./img/gif/动图4.gif" alt="">
-        </div>
-<img class="gif-img5" src="./img/gif/卡车.gif" alt="">
-
-    </div>
-
-</div>
-
-<footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <h4>关注我们</h4>
-                    <div class="barcode">
-                        <img src="img/index/barcode.png">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <h4>产品</h4>
-                    <p>产品列表</p>
-                    <p>渠道方案</p>
-                    <p>渠道分享</p>
-                </div>
-                <div class="col-2">
-                    <h4>服务</h4>
-                    <p>渠道培训</p>
-                    <p>客户呼叫中心</p>
-                    <p>营销方案</p>
-                </div>
-                <div class="col-2">
-                    <h4>团队</h4>
-                    <p>加入我们</p>
-                    <p>关于我们</p>
-                </div>
-                <div class="col-2">
-                    <h4>公益</h4>
-                    <p>项目列表</p>
-                    <p>多方合作</p>
-                </div>
-                <div class="col-2">
-                    <h4>隐私</h4>
-                    <p>隐私说明</p>
-                </div> 
+            <div class="gif-div1">
+                <img class="gif-img1" src="./img/gif/动图1.gif" alt="">
+                <p>采样寄送</p>
+            </div>
+            <div class="gif-div2">
+                <img class="gif-img2" src="./img/gif/动图2.gif" alt="">
+                <p>您的报告正在快马加鞭的检测中</p>
+                <p>请耐心等待哦</p>
+            </div>
+            <div class="gif-div3">
+                <img class="gif-img3" src="./img/gif/动图3.gif" alt="">
+                <p>报告获取</p>
+            </div>
+            <div class="gif-div4">
+                <img class="gif-img4" src="./img/gif/动图4.gif" alt="">
+                <p>治疗干预</p>
             </div>
         </div>
-        <div class="footer-info">
-            &copy; 2018 MDHcare.cn 版权所有  丨  ICP证：京ICP备17067248号  丨 联系电话：010-53359495
+        <img class="gif-img5" src="./img/gif/卡车.gif" alt="">
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <h6>关注我们</h6>
+                <div class="barcode">
+                    <img src="./img/imgs/二维码.jpg">
+                </div>
+            </div>
+            <div class="col-2">
+                <h6>产品</h6>
+                <p>专题分享</p>
+                <p>检测产品</p>
+                <p>适用阶段</p>
+                <p>检测流程</p>
+            </div>
+            <div class="col-2">
+                <h6>服务</h6>
+                <p>医生服务</p>
+                <p class="channel">渠道服务</p>
+                <p>其他服务</p>
+            </div>
+            <div class="col-2">
+                <h6>关于我们</h6>
+                <p class="join">合作伙伴</p>
+                <p>公司介绍</p>
+                <p>工作机会</p>
+            </div>
+            <div class="col-2">
+                <h6>城市合伙人</h6>
+                <p class="cooperation">立即申请</p>
+            </div>
+            <div class="col-2">
+                <h6>隐私</h6>
+                <p>隐私说明</p>
+            </div> 
         </div>
+    </div>
+    <div class="footer-info">
+        &copy; 2019 MDHcare.cn 版权所有  丨  ICP证：京ICP备17067248号  丨 联系电话：010-53359495
+    </div>
 </footer>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/Swiper/4.2.0/js/swiper.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-        var mySwiper = new Swiper ('.swiper-container', { 
-            autoplay: true,//可选选项，自动滑动
-            // 如果需要分页器
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            // 如果需要前进后退按钮
-            navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            }
-        }) 
-    </script>
+    <script src="./js/product.js"></script>
+    <script src="./js/public.js"></script>
 </body>
 </html>

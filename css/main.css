@@ -1,15 +1,14 @@
 *{
-    font-family: PingFang SC Regular, Microsoft YaHei, 微软雅黑, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: SourceHanSansSC-Light;
     list-style: none;
 }
 body {
-    font-family: "PingFang SC Regular", "Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important;
-    min-width: 1440px;
+    min-width: 1080px;
     letter-spacing: 1px;
     margin:0 auto;
 }
 .swiper-button-prev{
-    background-image:url('../img/logos/icon_arrow_left.png');
+    background-image:url('../img/imgs/icon_left.png');
     left:260px;
     width: 40px;
     height: 40px;
@@ -27,13 +26,12 @@ body {
     background: #fff;
     -moz-box-shadow: 10px 10px 5px #189c8f;
     box-shadow: 0px 0px 10px rgba(192, 218, 215, .8); 
-
 }
 .container {  
     min-width: 1040px;   
 }
 .nav-container .navbar {
-    width: 100%;
+    width: 1060px;
     margin: 0 auto;
     padding: 0;
     margin-left: 100px; 
@@ -74,10 +72,39 @@ body {
 .nav-container .navbar-nav .active {
     position: relative;
 }
+.nav-container .navbar-nav{
+    position: relative;
+}
 .nav-container .navbar-nav .active .nav-link,
 .nav-container .navbar-nav .nav-link:hover{
     color: #009999;
     font-weight: bold;
+}
+.navbar .right-info .phone-info:hover .barcode{
+    display: block;
+}
+.navbar .right-info .phone-info .barcode img{
+    width: 80px;
+    height: 80px;
+}
+.navbar .right-info .phone-info .barcode{
+    display: none;
+    width: 80px;
+    height: 80px;
+    background: red;
+    position: fixed;
+    top:30px;
+    left: -5px;
+}
+.navbar .right-info .phone-info .barcode .san{
+    position: fixed;
+    top:20px;
+    left: 20px;
+    width:0;
+    height:0;
+	border-right:10px solid transparent;
+	border-left:10px solid transparent;
+	border-bottom:10px solid pink;
 }
 .swiper{
     width: 100%;
@@ -90,6 +117,7 @@ body {
     width: 20px;
     height: 2px;
     border-radius: 0;
+    background: #4BDAD3;
 }
 .swiper-pagination-bullet-active{
     background: #4BDAD3;
@@ -103,7 +131,11 @@ body {
     position: relative;
 }
 .life-one{
-    display: flex; 
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
 }
 .life h4{
     line-height: 0px;
@@ -172,115 +204,39 @@ body {
     animation-name: img2; /*动画名称*/
     animation-duration: 2s; /*动画持续时间*/
     animation-iteration-count: 1; /*动画次数*/
-    animation-delay: 0.5s; /*延迟时间*/
+    animation-delay: 1.5s; /*延迟时间*/
 }
 .people .img-three{
     animation-name: img3; /*动画名称*/
     animation-duration: 2s; /*动画持续时间*/
     animation-iteration-count: 1; /*动画次数*/
-    animation-delay: 1s; /*延迟时间*/
+    animation-delay: 3s; /*延迟时间*/
 }
 .people .img-four{
     animation-name: img4; /*动画名称*/
     animation-duration: 2s; /*动画持续时间*/
     animation-iteration-count: 1; /*动画次数*/
-    animation-delay: 1.5s; /*延迟时间*/
+    animation-delay: 4.5s; /*延迟时间*/
 }
 .people .img-five{
     animation-name: img5; /*动画名称*/
     animation-duration: 2s; /*动画持续时间*/
     animation-iteration-count: 1; /*动画次数*/
-    animation-delay: 2s; /*延迟时间*/
+    animation-delay: 6s; /*延迟时间*/
 }
 .people .img-six{
     animation-name: img6; /*动画名称*/
     animation-duration: 2s; /*动画持续时间*/
     animation-iteration-count: 1; /*动画次数*/
-    animation-delay: 2.5s; /*延迟时间*/
+    animation-delay: 7.5s; /*延迟时间*/
 }
 .people .img-senven{
     animation-name: img7; /*动画名称*/
     animation-duration: 2s; /*动画持续时间*/
     animation-iteration-count: 1; /*动画次数*/
-    animation-delay: 3s; /*延迟时间*/
+    animation-delay: 9s; /*延迟时间*/
 }
-@keyframes img1 {
-0% {
-    opacity: 0; /*初始状态 透明度为0*/
-    }
-    50% {
-    opacity: 0.5; /*中间状态 透明度为0*/
-    }
-    100% {
-    opacity: 1; /*结尾状态 透明度为1*/
-    }
-}
-@keyframes img2 {
-0% {
-    opacity: 0; /*初始状态 透明度为0*/
-    }
-    50% {
-    opacity: 0.5; /*中间状态 透明度为0*/
-    }
-    100% {
-    opacity: 1; /*结尾状态 透明度为1*/
-    }
-}
-@keyframes img3 {
-0% {
-    opacity: 0; /*初始状态 透明度为0*/
-    }
-    50% {
-    opacity: 0.5; /*中间状态 透明度为0*/
-    }
-    100% {
-    opacity: 1; /*结尾状态 透明度为1*/
-    }
-}
-@keyframes img4 {
-0% {
-    opacity: 0; /*初始状态 透明度为0*/
-    }
-    50% {
-    opacity: 0.5; /*中间状态 透明度为0*/
-    }
-    100% {
-    opacity: 1; /*结尾状态 透明度为1*/
-    }
-}
-@keyframes img5 {
-0% {
-    opacity: 0; /*初始状态 透明度为0*/
-    }
-    50% {
-    opacity: 0.5; /*中间状态 透明度为0*/
-    }
-    100% {
-    opacity: 1; /*结尾状态 透明度为1*/
-    }
-}
-@keyframes img6 {
-0% {
-    opacity: 0; /*初始状态 透明度为0*/
-    }
-    50% {
-    opacity: 0.5; /*中间状态 透明度为0*/
-    }
-    100% {
-    opacity: 1; /*结尾状态 透明度为1*/
-    }
-}
-@keyframes img7 {
-    0% {
-        opacity: 0; /*初始状态 透明度为0*/
-        }
-        50% {
-        opacity: 0.5; /*中间状态 透明度为0*/
-        }
-        100% {
-        opacity: 1; /*结尾状态 透明度为1*/
-        }
-    }
+ 
 .life{
     width: 800px;
     height: 50px;
@@ -292,7 +248,11 @@ body {
     width: 740px;
 }
 .life-one{
-    display: flex; 
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
 }
 .life-threes{
    left:44.5%;
@@ -305,14 +265,14 @@ body {
     width: 234px;
     height: 1px;
     margin-right: 10px;
-    background: #000;
+    border:1px solid #000;
 }
 .life .life-right1{
     display: block;
     width: 234px;
     height: 1px;
     margin-left: 10px;
-    background: #000;
+    border:1px solid #000;
 }
 .life-two1{
     width: 289px;
@@ -320,12 +280,12 @@ body {
     margin: 0 auto;
     margin-top: 20px;
     position: absolute;
-    left:30%;
+    left:31.5%;
     color: #727272;
     font-family: SourceHanSansSC-Light;
 }
 .life-two2{
-    width: 335px;
+    width: 350px;
     height: 36px;
     margin: 0 auto;
     margin-top: 20px;
@@ -358,11 +318,22 @@ body {
     opacity: .1;
 }
 .service{
-    display: flex;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
     width: 100%;
     margin-top: 200px;
     padding-left: 115px;
-
+}
+.service-mdhcare{
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+.service-mdhcare img{
+    width: 100%;
 }
 .service>img{
     width: 296px;
@@ -411,7 +382,7 @@ body {
 .author{
     position: absolute;
     bottom:10%;
-    right: 14%;
+    right: 20.5%;
     color:white;
 }
 .saying>img{
@@ -422,23 +393,37 @@ body {
     margin-top: 40px;
     background:rgba(252,252,252,1);
 }
+.footer .barcode img{
+    padding: 0;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+}
+.footer .channel,.footer .cooperation,.footer .join{
+    cursor: pointer;
+}
 .footer .container {
     padding: 40px 15px;
 }
-.footer .container h4 {
+.footer .container h6 {
     margin-bottom: 24px;
-    font-size: 24px;
+    font-size: 16px;
     font-family: "PingFang SC Heavy", "PingFang SC Regular", "Microsoft YaHei"; 
 }
+.footer .row{
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
 .footer .container p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: lighter;
     color: #000;
 } 
 .footer .footer-info { 
     line-height: 40px;
     color: #000;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: lighter;
     text-align: center;
     border-top:1px solid #000;
@@ -448,13 +433,28 @@ body {
 .life-product{
     margin-top: 100px;
 }
-.list,.list-one{
+.list{
     margin:0 auto;
     width: 792px;
-    display: flex;
-    justify-content: space-evenly;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
 }
-.list li,.list-one li{
+.list-one{
+    margin:0 auto;
+    width: 792px;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    /* justify-content: space-between; */
+
+}
+.list li{
+    width: 20%;
     text-align: center;
 }
 .list li>p,.list-one li>p{
@@ -463,6 +463,19 @@ body {
 .list-one{
     margin-top: 50px;
 }
+.list-one li{
+    width: 20%;
+    text-align: center;
+}
+/* .list-one .li1-one p{
+    padding-left: 25px;
+}
+.list-one .li1-two p{
+    padding-left: 32px;
+}
+.list-one .li1-three p{
+    padding-left: 42px;
+} */
 .list li :hover  .product-six{
     display: block;
     background: red;
@@ -470,43 +483,93 @@ body {
 .gif{
     margin-top: 100px;
     position: relative;
+    text-align: center;
 }
 .gif-img{
     width: 780px;
     margin:0 auto;
-    display: flex;
-    justify-content: space-evenly;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-pack: justify;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 }
 .gif-img5{
     position: absolute;
     top:0%;
-    left:20%;
+    left:31%;
     animation-name: car;
-    display: flex;
-    justify-items: flex-start;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-pack: start;
+    -moz-justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 @keyframes car{
     from{
-        left:200px;
+        left:470px;
     }
     to{
-        left:1100px;
+        left:1200px;
     }
-    
+}  
+.select{
+    position: absolute;
+    top:70%;
+    left:41%;
+    text-decoration: none;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    font-size: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
-.prodcut-six{
+.select a{
+    text-decoration: none;
+    width: 60px;
+    height: 30px;
+    color:gray;
+    line-height: 30px;
+    text-align: center;
+    background: white; 
+} 
+.select a:hover{ 
+    color: #009999;
+    font-weight: bold;
+} 
+.prodcut-six,.prodcut-six1{
     width: 852px;
     height: 200px;
     border:1px solid #69CBB3;
     margin:0 auto;
-    display: flex;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    display: none;
-
 }
-.prodcut-six .one{ 
+.product-none,.product-none1{
+    display: none ;
+}
+.prodcut-six .one,.prodcut-six1 .one{ 
     margin-left: 30px; 
     margin-top: 30px;
     position: relative;
@@ -514,7 +577,7 @@ body {
     height:60px;
     background:rgba(105,203,179,0.1);
 }
-.prodcut-six .two{
+.prodcut-six .two,.prodcut-six1 .two{
     margin-left: 30px;  
     position: relative;
     width:240px;
@@ -522,6 +585,10 @@ body {
     background:rgba(105,203,179,0.1);
 }
 .product-intestine{
+    width:240px;
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
     padding-left: 30px;
     padding-top: 10px;
     font-size: 14px;
@@ -588,7 +655,11 @@ body {
     height: 80px;
     margin:0 auto;
     margin-top: 250px;
-    display: flex;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
     position: relative;
 }
 .product-prevention li{
@@ -670,13 +741,22 @@ body {
     color: #727272;
     font-family: SourceHanSansSC-Light;
 }
+.service-product{
+    margin: 100px 0;
+}
 .service-list{
-    list-style: none;
-    width: 1000px;
-    height: 170px; 
-    margin-left: 40px;
-    margin-top: 100px;
-    display: flex;
+    padding: 0;
+    width: 900px;
+    margin: 0 auto;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-pack: justify;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .service-list li{
@@ -686,11 +766,10 @@ body {
 .service-list li h6{
     margin-top: 10px;
 }
-.service-img{
-    position: relative;
-}
 .service-img img{
     width: 100%;
+    position: relative;
+    margin-top: 100px;
 }
 .service-img1{
     position: relative;
@@ -820,14 +899,14 @@ opacity: 1; /*结尾状态 不透明*/
     font-family:SourceHanSansSC-Light;
     position: absolute;
     top:30%;
-    left: 35%;
+    left: 38%;
 }
 .service-me{
     width:500px;
     height:18px;
     position: absolute;
     top:55%;
-    left: 31%;
+    left: 34%;
     font-size:18px;
     font-family:SourceHanSansSC-Light;
     font-weight:300;
@@ -858,16 +937,38 @@ opacity: 1; /*结尾状态 不透明*/
     font-family: SourceHanSansSC-Light;
 }
 .service-photo{
-    width: 800px;
+    width: 900px;
     margin:0 auto;
-    display: flex;
-    height: 120px;
-    list-style: none; 
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;    
+    padding:0;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    text-align: center; 
+    /* -webkit-box-pack: justify; */
+    /* -moz-justify-content: space-between; */
+    /* -webkit-justify-content: space-between; */
+    /* justify-content: space-between; */
 }
 .service-photo li{
+    width: 25%;
+}
+.service-photo-five li{
+    width: 20%;
+}
+.service-phot{
+    padding-top: 100px;
+    width: 900px;
+    margin:0 auto;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    text-align: center; 
+}
+.service-phot li{
     width: 25%;
 }
 .service-photo li p{
@@ -911,23 +1012,32 @@ opacity: 1; /*结尾状态 不透明*/
     width: 100%;
 }
 .partner-input input{
-    width: 90%;
+    width: 100%;
     margin:10px 0;
     outline: none;
     border:0;
+    font-size:14px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    
 }
 .partner-input span{
     display: inline-block;
-    width: 80%;
+    width: 85%;
     border-bottom:1px solid #ccc; 
+}
+.partner-input span input::-webkit-input-placeholder{
+    color:rgba(169,169,169,1);
 }
 .partner-info{
     display: block;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 10px;
+    color:rgba(169,169,169,1);
+    transform: scale(0.8);
 }
 .partner-btn{
-    margin-top: 35px;
+    margin-top: 25px;
 }
 /* 见山会诊 */ 
 .bigexplain{
@@ -935,17 +1045,20 @@ opacity: 1; /*结尾状态 不透明*/
     margin-top: 100px;
     margin-bottom: 70px;
 }
+
 .explain .oddnum{
-    width:225px;
+    width:82%;
     height:225px;
     background:rgba(132,203,193,1);
     border-radius:10px;
     line-height: 225px;
     text-align: center;
     position: relative;
+    margin: 0 auto;
 }
 .explain .evennum{
-    width:225px;
+    margin: 0 auto;
+    width:82%;
     height:225px;
     border:2px solid rgba(132,203,193,1);
     border-radius:10px;
@@ -957,31 +1070,39 @@ opacity: 1; /*结尾状态 不透明*/
     font-size: 48px;
     color:#fff;
 }
-.bigexplain .explain {
+.explain{
     margin-top: 20px;
-    width: 100%; 
-    display: flex; 
-    justify-content:space-around;
+    margin: 0 auto;
+    width: 900px; 
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    /* -webkit-box-pack: justify; */
+    /* -moz-justify-content: space-between; */
+    /* -webkit-justify-content: space-between; */
+    /* justify-content: space-between; */
     padding: 0;
     text-align: center;
-    list-style: none;
+}
+.bigexplain .explain {
+    margin-top: 20px;
 }
 .explain .evennum h5{
     font-size: 16px;
     margin-top:40px;
 }
-.explain .evennum .content{
-    margin-top: 20px;
-
-}
 .explain .evennum .content span{
     font-size: 14px;
-    position: unset;
+    position: static;
     line-height: 35px;
     display: block;
     color: #666666
 }
-
+.explain li{
+    width: 25%;
+}
 /* 关于我们 */
 .we{
     margin-top: 100px;
@@ -993,46 +1114,129 @@ opacity: 1; /*结尾状态 不透明*/
     margin: 0 auto;
 }
 .us-top{
-    display: flex;
-    justify-content:center;
+    /* display: -webkit-box;  */
+    /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    /* display: -moz-box;  */
+    /* 老版本语法: Firefox (buggy) */
+    /* display: -ms-flexbox;  */
+    /* 混合版本语法: IE 10 */
+    /* display: -webkit-flex;  */
+    /* 新版本语法: Chrome 21+ */
+    /* display: flex;  */
+    /* 新版本语法: Opera 12.1, Firefox 22+ */
+    /* -webkit-box-pack: center; */
+    /* -moz-justify-content: center; */
+    /* -webkit-justify-content: center; */
+    /* justify-content: center; */
+    display: block;
+    position: relative;
 }
 .us .line{ 
-    width: 234px; 
+    width: 250px; 
     height: 1px;
     background: #303030;
     border:1px solid #303030;
+    position: absolute;
+    top:0;
 }
 .aboutus{
     line-height: 0;
-    padding: 0 50px; 
     font-size: 24px;
     font-family:SourceHanSansSC-Light;
 }
+.aboutus-hard{
+    line-height: 0;
+    padding: 0 20px; 
+    font-size: 24px;
+    font-family:SourceHanSansSC-Light;
+    margin-bottom: 0px;
+}
+
 .letter{
     position: absolute;
     color: #727272;
     opacity: .1;
     font-size: 30px;
-    top: -30%;
-    left: 39%;
+    bottom: -40px;
+    left: 30%;
+}
+
+.letter-target{
+    position: absolute;
+    color: #727272;
+    opacity: .1;
+    font-size: 30px;
+    bottom: -40px;
+    left: 30%;
+}
+.letter-target-two{
+    position: absolute;
+    color: #727272;
+    opacity: .1;
+    font-size: 30px;
+    top: -50%;
+    left: 30%;
+}
+
+.letter-gene{
+    position: absolute;
+    color: #727272;
+    opacity: .1;
+    font-size: 30px;
+    left: 30%;
+}
+.letter-gene-two{
+    position: absolute;
+    color: #727272;
+    opacity: .1;
+    font-size: 30px;
+    bottom: -40px;
+    left: 30%;
+}
+.letter-hard{
+    position: absolute;
+    color: #727272;
+    opacity: .1;
+    font-size: 30px;
+    top: 6px;
+    left: 17%;
+}
+.letter-two-hard{
+    position: absolute;
+    color: #727272;
+    opacity: .1;
+    font-size: 30px;
+    bottom: -40px;
+    left: 17%;
 }
 .letter-two{
     position: absolute;
     color: #727272;
     opacity: .1;
     font-size: 30px;
-    top: 15%;
-    left: 39%;
+    top: 5px;
+    left: 30%;
+}
+.letter-gene-one,.letter-gene-s{
+    left: 20%;
+}
+.us .line:nth-child(1){
+    right: 0   
 }
 .capitalization{
     color: #727272;
     font-size: 16px;
+    margin-top: 20px;
 }
 .green{
     width: 40px;
     height: 4px;
     background: #84CBC1;
     margin:0 auto;
+}
+.green-line{
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .word-content{
     margin-top: 100px;
@@ -1063,7 +1267,11 @@ opacity: 1; /*结尾状态 不透明*/
 } 
 .swiper-slide{
     width: 100%;
-    display: flex;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
 }
 .swiper-slide .left{
     width: 30%;
@@ -1080,7 +1288,11 @@ opacity: 1; /*结尾状态 不透明*/
 }
 .swiper-slide .right .founder{
     position: relative;
-    display: flex;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
 }
 .swiper-slide .right .founders{
     padding-left:5px;
@@ -1106,6 +1318,7 @@ opacity: 1; /*结尾状态 不透明*/
     background:rgba(132,203,193,1);
     position: absolute;
     top:50%;
+    left: 0;
 }
 .swiper-slide .right .founder .squares{
     width:38px;
@@ -1113,6 +1326,7 @@ opacity: 1; /*结尾状态 不透明*/
     background:rgba(132,203,193,1);
     position: absolute;
     top:50%;
+    left:0;
 }
 .swiper-slide .right  .founder-word {
     margin-top: 30px;
@@ -1133,12 +1347,20 @@ opacity: 1; /*结尾状态 不透明*/
 .corporatr .first-one{ 
     margin: 25px 0;
     width: 630px;
-    display: flex;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
 }
 .corporatr .first-one .left{
     position: relative;
     width: 250px;
-    display: flex;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
 }
 .corporatr .first-one .right{
     flex:1;
@@ -1190,7 +1412,10 @@ opacity: 1; /*结尾状态 不透明*/
     font-family:SourceHanSansSC-Light;
     font-weight:300;
     color:rgba(102,102,102,1);
-    justify-items: flex-end;
+     -webkit-box-pack: end;
+    -moz-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
 }
 .corporatr .first-one .left .corporatr-life-trusts{
     position: absolute;
@@ -1202,7 +1427,10 @@ opacity: 1; /*结尾状态 不透明*/
     font-family:SourceHanSansSC-Light;
     font-weight:300;
     color:rgba(102,102,102,1);
-    justify-items: flex-end;
+     -webkit-box-pack: end;
+    -moz-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
 }
 .corporatr .first-one .right .corporatr-healthy{
     position: absolute;
@@ -1231,7 +1459,12 @@ opacity: 1; /*结尾状态 不透明*/
 .cognition .cognition-list{ 
     width: 800px;
     margin: 0 auto;
-    display: flex; 
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    margin-bottom: 20px;
 }
 .cognition .cognition-list li{
     width: 25%;
@@ -1244,7 +1477,7 @@ opacity: 1; /*结尾状态 不透明*/
 .photo .service-photo{
     margin-top: 100px;
 } 
-.service-img .word .team{
+.service-mdhcare .word .team{
     position: absolute;
     top: 20%;
     left: 30%;
@@ -1255,7 +1488,7 @@ opacity: 1; /*结尾状态 不透明*/
     font-weight:300;
     color:rgba(254,254,254,1);
 }
-.service-img .word .seaman{
+.service-mdhcare .word .seaman{
     position: absolute;
     left:37%;
     top:40%;
@@ -1267,7 +1500,7 @@ opacity: 1; /*结尾状态 不透明*/
     color:rgba(254,254,254,1);
     opacity:0.5;
 }
-.service-img .word .if{
+.service-mdhcare .word .if{
     position: absolute;
     top:70%;
     left:40%;
@@ -1336,7 +1569,11 @@ opacity: 1; /*结尾状态 不透明*/
     margin-top: 100px;
 }
 .atmosphere-list{
-    display: flex;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
     width: 950px;
     margin:0 auto;
 }
@@ -1351,20 +1588,18 @@ opacity: 1; /*结尾状态 不透明*/
 }
 .atmosphere-list .background .teams{
     position: absolute;
-    left:30%;
-    width:100px;
+    left:16%;
+    width:155px;
     height:18px;
     font-size:18px;
     font-family:SourceHanSansSC-Light;
     font-weight:300;
     color:rgba(255,255,255,1);
 }
+
 /* 渠道服务 */
 .photos{
     margin-top: 50px;
-}
-.photo .service-photos{
-    width: 1000px;
 }
 .train{
     margin: 100px 0;
@@ -1372,33 +1607,142 @@ opacity: 1; /*结尾状态 不透明*/
 .train-list{
     width: 850px;
     margin: 0 auto;
-    display: flex;
-} 
-.train-list li:not(:first-child){ 
-    margin-left: 12px;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-pack: justify;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 }
+.train-list .train-img1,.train-list .train-img2,.train-list .train-img3,.train-list .train-img4,.train-list .train-img5{
+    position: relative;
+}
+.train-list .train-shadow1,.train-list .train-shadow2,.train-list .train-shadow3,.train-list .train-shadow4,.train-list .train-shadow5{
+    
+    position: absolute;
+    top:0;
+    display: inline-block;
+    display: none;
+    width:160px;
+    height:140px;
+    background:rgba(0,0,0,1);
+    opacity:0.5;
+    border-radius:10px;
+}
+.train-list .train-shadow1 .train-size,.train-list .train-shadow2 .train-size,.train-list .train-shadow3 .train-size,.train-list .train-shadow4 .train-size,.train-list .train-shadow5 .train-size{
+    position: absolute;
+    top:35%;
+    left:25%;
+    width:80px;
+    height:18px;
+    font-size:18px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(254,254,254,1);
+}
+
 .us .us-top .lines{
-    width: 170px;
+    width: 180px;
 }
 .us .us-top .line-ltter{
-    width: 138px;
+    width: 160px;
 }
 .us .us-top .one{
     padding:0 40px;
 }
 .gene{
-    margin-top: 100px;
+    margin-top: 130px;
     font-size: 0;
-
 }
 .gene-img{
     width: 891px;
-    display: flex;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
     margin: 0 auto;
-    justify-content:center;
 }
-.gene-img img{
-    width: 33.3%; 
+.hover-img1,.hover-img2,.hover-img3{ 
+    display: none;
+}
+.gene-img .gene-img1,.gene-img .gene-img2,.gene-img .gene-img3{
+    position: relative;
+    width: 298px;
+    height: 276px;
+}
+.size{
+    position: absolute;
+    top:30%;
+    left:45%;
+    color: white;
+}
+.gene .gene-size{
+    position: absolute;
+    top:140%;
+    left: -105%;
+    width:150px;
+    height:16px;
+    font-size:16px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(255,255,255,1);
+}
+.gene .gene-product-size{
+    position: absolute;
+    top:140%;
+    left: -90%;
+    width:150px;
+    height:16px;
+    font-size:16px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(255,255,255,1);
+}
+.gene-img1 .hover-bg,.gene-img2 .hover-bg,.gene-img3 .hover-bg{
+    width: 298px;
+    height: 260px;
+    background:rgba(132,203,193,1);
+    position: relative;
+}
+.gene-img1 .hover-bg img,.gene-img2 .hover-bg img,.gene-img3 .hover-bg img{
+    position: absolute;
+    top:10%;
+    left:45%;
+    color:white;
+    margin-top: -10px;
+}
+.gene-img1 .hover-bg-size-top,.gene-img2 .hover-bg-size-top,.gene-img3 .hover-bg-size-top{
+    position: absolute;
+    top:25%;
+    left: 30%;
+    width:150px;
+    height:16px;
+    font-size:16px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(35,35,35,1);
+}
+.gene .size-left{
+    left: 35%;
+}
+.gene-img1 .hover-list,.gene-img2 .hover-list,.gene-img3 .hover-list{
+    width: 150px;
+    height: 110px;
+    position: absolute;
+    top:40%;
+    left:25%;
+    text-align: center;
+}
+.gene-img1 .hover-list span,.gene-img2 .hover-list span,.gene-img3 .hover-list span{
+    display: block;
+    font-size:14px;
+    font-family:SourceHanSansSC-Light;
+    font-weight:300;
+    color:rgba(255,255,255,1);
 }
 
 /* 合作机构 */
@@ -1583,8 +1927,11 @@ opacity: 1; /*结尾状态 不透明*/
 .lotdata{
     width: 713px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
 }
 .datas{ 
     width: 710px;
@@ -1597,7 +1944,7 @@ opacity: 1; /*结尾状态 不透明*/
     margin-bottom: 40px;
 }
 .datas .lotdata li{
-    width:100px;
+    width:25%;
     height:21px;
     font-size:24px;
     font-family:SourceHanSansSC-Light;
