@@ -8,24 +8,17 @@
     <meta name="description" content="我们提供帮助给需要的人">
     <link href="https://cdn.bootcss.com/Swiper/4.2.0/css/swiper.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
-<body> 
+<body>
 <div class="nav-container fixed-top">
     <div class="container">
-        <nav class="navbar navbar-expand-xl">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#"> 
-                <img src="img/logos/易得好康新logo.png" alt="">
-            </a> 
-            <!-- Toggler/collapsibe Button -->
-            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">-->
-                <!--<span class="navbar-toggler-icon"></span>-->
-            <!--</button>--> 
-            <!-- Navbar links -->
-            <div class="navbar-links" id="collapsibleNavbar">
-                <ul class="navbar-nav justify-content-between">
-                    <li class="nav-item">
+        <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-link">
+                        <img src="img/logos/易得好康新logo.png" alt="">
+                    </li>
+                    <li class="nav-item ">
                         <a class="nav-link one" href="index.html">首页</a>
                     </li>
                     <li class="nav-item">
@@ -33,9 +26,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="channel.html">服务</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="MDHcare.html">见山会诊</a>
+                    </li> 
+                    <li class="nav-item ">
+                        <a class="nav-link" href="mdhcare.html">见山会诊</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">关于我们</a>
@@ -43,8 +36,8 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="service.html">城市合伙人</a>
                     </li>
+                    </li>
                 </ul>
-            </div>
             <div class="right-info">
                 <div class="phone-info">
                     微信服务
@@ -61,40 +54,40 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="./img/banner效果图/见山.jpg" alt=""> 
+                <img class="index-mdh" src="./img/banner效果图/见山.jpg" alt=""> 
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/boss.jpg" alt="">
+                <img class="index-join" src="./img/banner效果图/boss.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/关于我们.jpg" alt="">
+                <img class="index-about" src="./img/banner效果图/关于我们.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/合伙人.jpg" alt="">
+                <img class="index-cooperation" src="./img/banner效果图/合伙人.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/合作机构.jpg" alt="">
+                <img class="index-join" src="./img/banner效果图/合作机构.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/年纪轻轻.jpg" alt="">
+                <img class="index-product" src="./img/banner效果图/年纪轻轻.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/心血管.jpg" alt="">
+                <img class="index-product" src="./img/banner效果图/心血管.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/渠道服务.jpg" alt="">
+                <img class="index-channel" src="./img/banner效果图/渠道服务.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/看癌.jpg" alt="">
+                <img class="index-product" src="./img/banner效果图/看癌.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/肿瘤个性化.jpg" alt="">
+                <img class="index-product" src="./img/banner效果图/肿瘤个性化.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/遗传.jpg" alt="">
+                <img class="index-product" src="./img/banner效果图/遗传.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner效果图/首页易得好.jpg" alt="">
+                <img class="index-index" src="./img/banner效果图/首页易得好.jpg" alt="">
             </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -107,12 +100,12 @@
         <div class="us"> 
             <div class="us-top">
                 <p class="line"></p>
-                <p class="letter">CHOOSE </p>
-                <p class="letter-two">US</p>
+                <p class="letter">Why</p>
+                <p class="letter-two">us</p>
                 <p class="aboutus">为什么选择我们</p>
                 <p class="line"></p>
             </div>
-            <p class="capitalization">CHOOSE US</p>
+            <p class="capitalization">Why us</p>
             <div class="green"></div>
         </div>
     </div>
@@ -148,21 +141,24 @@
 </div>
 </div>
 <div class="service-mdhcare">
-    <img src="./img/imgs/img_center.png" alt="">
-    <h4 class="service-tell">现在联系获取最新2000+产品资料</h4>
-    <h6 class="service-me">易得好康与您一起，创投领先服务平台，携手开启创富机会</h6>
+    <div class="container">
+        <div class="h4-h6">
+            <h4 class="service-tell">现在联系获取最新2000+产品资料</h4>
+            <h6 class="service-me">易得好康与您一起，创投领先服务平台，携手开启创富机会</h6>
+        </div>
+    </div>
 </div>
 <div class="we">
     <div class="container">
         <div class="us"> 
             <div class="us-top">
                 <p class="line"></p>
-                <p class="letter">JOINING</p>
-                <p class="letter-two">PROCESS</p>
+                <p class="letter">Join</p>
+                <p class="letter-two">Process</p>
                 <p class="aboutus">加盟流程</p>
                 <p class="line"></p>
             </div>
-            <p class="capitalization">Joining process</p>
+            <p class="capitalization">Join Process</p>
             <div class="green"></div>
         </div>
     </div>
@@ -188,7 +184,7 @@
     </ul>
 </div> 
 <div class="partne-img">
-    <img class="img" src="./img/imgs/城市合伙人切.jpg" alt="">
+    <!-- <img class="img" src="./img/imgs/城市合伙人切.jpg" alt=""> -->
     <div class="partner">
         <h5>- 立即申请 -</h5>
         <p>成为易得好康合伙人</p>
@@ -250,7 +246,7 @@
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/Swiper/4.2.0/js/swiper.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./js/product.js"></script>
     <script src="./js/public.js"></script>
+    <script src="./js/product.js"></script>
 </body>
-</html>
+</html> 

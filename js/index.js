@@ -28,12 +28,12 @@ $(function () {
     $('.img-six').css('display','none')
     $('.img-senven').css('display','none')
     $('.img-one').fadeIn(1000)
-    $('.img-two').fadeIn(2000)
-    $('.img-three').fadeIn(4000)
-    $('.img-four').fadeIn(8000)
-    $('.img-five').fadeIn(12000)
-    $('.img-six').fadeIn(16000)
-    $('.img-senven').fadeIn(20000)
+    $('.img-two').fadeIn(4000)
+    $('.img-three').fadeIn(9000)
+    $('.img-four').fadeIn(13000)
+    $('.img-five').fadeIn(17000)
+    $('.img-six').fadeIn(20000)
+    $('.img-senven').fadeIn(22000)
 
 })
 

@@ -1,4 +1,4 @@
-var baseURL = 'https://qa.mdhcare.cn/mdhcare-backend'
+var baseURL = 'https://www.mdhcare.cn/mdhcare-backend'
 $(function () {
     $('.li-one').hover(function () {
         $('.product-none1').show()
@@ -78,6 +78,22 @@ $(function () {
     $('.gif-div2').fadeIn(4000);
     $('.gif-div3').fadeIn(15000);
     $('.gif-div4').fadeIn(20000);
+    $('.name').change(function () {
+        $('.btn-none').css('display','inline-block')
+        $('.btn2-block').css('display','none')
+    });
+    $('.cellphone').change(function () {
+        $('.btn-none').css('display','inline-block')
+        $('.btn2-block').css('display','none')
+    });
+    $('.thinkCity').change(function () {
+        $('.btn-none').css('display','inline-block')
+        $('.btn2-block').css('display','none')
+    });
+    $('.currentWork').change(function () {
+        $('.btn-none').css('display','inline-block')
+        $('.btn2-block').css('display','none')
+    });
     $('.btn2-block').click(function () {
         var name = $('.name').val();
         var cellphone = $('.cellphone').val();
@@ -99,8 +115,6 @@ $(function () {
                     }),
                     success: function(res) {
                         console.log(res)
-                        $('.btn-block').css('display','none')
-                        $('.btn-none').css('display','block')
                         alert('提交成功')
                     },
                     error:function(err){

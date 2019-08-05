@@ -3,13 +3,13 @@
     list-style: none;
 }
 body {
-    min-width: 1080px;
+    min-width: 1040px;
     letter-spacing: 1px;
     margin:0 auto;
 }
 .swiper-button-prev{
     background-image:url('../img/imgs/icon_left.png');
-    left:260px;
+    left:13.5%;
     width: 40px;
     height: 40px;
     background-size: 40px 40px;
@@ -19,39 +19,44 @@ body {
     width: 40px;
     height: 40px;
     background-size: 40px 40px;
-    right:260px;
+    right:13.5%;
 }
-
+.nav{
+    width: 100%;
+    display: flex;
+    /* display: -webkit-box;  */
+    display: -ms-flexbox;
+    padding:0;
+    margin:0;
+    justify-content: space-between;
+}
 .nav-container{ 
     background: #fff;
+    height: 39px;
+    line-height: 39px;
     -moz-box-shadow: 10px 10px 5px #189c8f;
     box-shadow: 0px 0px 10px rgba(192, 218, 215, .8); 
 }
+.navbar{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 .container {  
     min-width: 1040px;   
+    position: relative;
 }
 .nav-container .navbar {
-    width: 1060px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
-    margin-left: 100px; 
 } 
 .nav-container .navbar .right-info {
-    position: absolute;
-    top: 50%;
-    right: 15%;
-    transform: translate(0%,-50%);
     font-size: 14px;
     font-family: HelveticaNeueLTPro;
     color: #676769;
     letter-spacing: 0;
-}
-.nav-container .navbar-expand-xl .navbar-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-right: 240px;
 }
 .nav-container .navbar-brand img{
     width:25px;
@@ -63,55 +68,68 @@ body {
     padding: 0!important;
     font-size: 14px;
     color: rgb(103, 103, 105);
-    line-height: 39px;
-    height: 39px;
+    line-height: 40px;
+    height: 45px;
 }
-.nav-container .one{
-    font-size: 16px;
+.nav-container .nav-item:nth-child(2),.nav-container .nav-item:nth-child(3),.nav-container .nav-item:nth-child(4){
+    width: 75px;
 }
-.nav-container .navbar-nav .active {
+.nav-container .nav-item:nth-child(5),.nav-container .nav-item:nth-child(6){
+    width: 108px;
+}
+.nav-container .nav-item:nth-child(7){
+    width: 125px;
+}
+.nav-list{
+    display: flex;
+}
+.nav .right-info{
+    margin-right: 5%;
+}
+/* .nav-container .nav-list .active {
+    position: relative;
+} */
+.nav-container .nav-list{
     position: relative;
 }
-.nav-container .navbar-nav{
-    position: relative;
-}
-.nav-container .navbar-nav .active .nav-link,
-.nav-container .navbar-nav .nav-link:hover{
+.nav-container .nav-list .active .nav-link,
+.nav-container .nav-list .nav-link:hover{
     color: #009999;
     font-weight: bold;
+    font-size: 16px;
 }
-.navbar .right-info .phone-info:hover .barcode{
+.nav .right-info .phone-info:hover .barcode{
     display: block;
 }
-.navbar .right-info .phone-info .barcode img{
+.nav .right-info .phone-info .barcode img{
     width: 80px;
     height: 80px;
 }
-.navbar .right-info .phone-info .barcode{
+.nav .right-info .phone-info .barcode{
     display: none;
     width: 80px;
     height: 80px;
     background: red;
     position: fixed;
-    top:30px;
-    left: -5px;
+    top:36px;
 }
-.navbar .right-info .phone-info .barcode .san{
+/* .nav .right-info .phone-info .barcode .san{
     position: fixed;
-    top:20px;
-    left: 20px;
+    top:13%;
+    right: 18.5%;
     width:0;
     height:0;
 	border-right:10px solid transparent;
 	border-left:10px solid transparent;
-	border-bottom:10px solid pink;
-}
+	border-bottom:10px solid #84CBC1;
+} */
 .swiper{
     width: 100%;
     height:460px;
 }
 .swiper img{
     width: 100%;
+    height: 460px;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
     width: 20px;
@@ -327,18 +345,6 @@ body {
     margin-top: 200px;
     padding-left: 115px;
 }
-.service-mdhcare{
-    width: 100%;
-    margin-top: 100px;
-    position: relative;
-}
-.service-mdhcare img{
-    width: 100%;
-}
-.service>img{
-    width: 296px;
-    height: 260px; 
-}
 .love{
     width: 520px;
     text-align: center;
@@ -364,14 +370,16 @@ body {
 }
 .saying{
     width: 100%;
+    height: 380px;
     margin-top: 150px;
+    background: url(../img/imgs/img_content_down.png);
     position: relative;
 }
 .chinese{
     color:white;
     position: absolute;
-    top:10%;
-    left:20%;
+    left:10%;
+    margin-top: 55px;
 }
 .chinese p > span{
     font-size: 20px;
@@ -381,8 +389,8 @@ body {
 }
 .author{
     position: absolute;
-    bottom:10%;
-    right: 20.5%;
+    margin-top:317px;
+    right: 12%;
     color:white;
 }
 .saying>img{
@@ -395,7 +403,6 @@ body {
 }
 .footer .barcode img{
     padding: 0;
-    margin-right: 10px;
     width: 80px;
     height: 80px;
 }
@@ -411,9 +418,7 @@ body {
     font-family: "PingFang SC Heavy", "PingFang SC Regular", "Microsoft YaHei"; 
 }
 .footer .row{
-    width: 1000px;
     text-align: center;
-    margin: 0 auto;
 }
 .footer .container p {
     font-size: 14px;
@@ -484,6 +489,7 @@ body {
     margin-top: 100px;
     position: relative;
     text-align: center;
+    margin-bottom: 150px;
 }
 .gif-img{
     width: 780px;
@@ -500,8 +506,8 @@ body {
 }
 .gif-img5{
     position: absolute;
-    top:0%;
-    left:31%;
+    /* top:0%;
+    left:31%; */
     animation-name: car;
     display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
     display: -moz-box; /* 老版本语法: Firefox (buggy) */
@@ -517,10 +523,10 @@ body {
 }
 @keyframes car{
     from{
-        left:470px;
+        left:250px;
     }
     to{
-        left:1200px;
+        left:720px;
     }
 }  
 .select{
@@ -570,6 +576,9 @@ body {
     display: none ;
 }
 .prodcut-six .one,.prodcut-six1 .one{ 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     margin-left: 30px; 
     margin-top: 30px;
     position: relative;
@@ -585,15 +594,19 @@ body {
     background:rgba(105,203,179,0.1);
 }
 .product-intestine{
-    width:240px;
+    width:220px;
     overflow: hidden;
-text-overflow:ellipsis;
-white-space: nowrap;
+    text-overflow:ellipsis;
+    white-space: nowrap;
     padding-left: 30px;
     padding-top: 10px;
     font-size: 14px;
 }
 .product-hongji{
+    width:200px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
     font-size: 12px;
     color:gray;
     position: absolute;  
@@ -654,7 +667,7 @@ white-space: nowrap;
     width: 700px;
     height: 80px;
     margin:0 auto;
-    margin-top: 250px;
+    margin-top: 150px;
     display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
     display: -moz-box; /* 老版本语法: Firefox (buggy) */
     display: -ms-flexbox; /* 混合版本语法: IE 10 */
@@ -898,15 +911,17 @@ opacity: 1; /*结尾状态 不透明*/
     color:white;
     font-family:SourceHanSansSC-Light;
     position: absolute;
+    left:50%;
     top:30%;
-    left: 38%;
+    transform: translate(-50%,0);
 }
 .service-me{
     width:500px;
     height:18px;
     position: absolute;
     top:55%;
-    left: 34%;
+    left:50%;
+    transform: translate(-50%,0);
     font-size:18px;
     font-family:SourceHanSansSC-Light;
     font-weight:300;
@@ -987,6 +1002,8 @@ opacity: 1; /*结尾状态 不透明*/
     width: 100%;
     position: relative;
     margin-top:150px;
+    height: 481px;
+    background: url('../img/imgs/城市合伙人切.jpg');
 }
 .partne-img .img{
     width: 100%;
@@ -994,7 +1011,8 @@ opacity: 1; /*结尾状态 不透明*/
 .partner{
     position: absolute; 
     top:11%;
-    left:40%;
+    left:50%;
+    transform: translate(-50%);
     width:320px;
     height:385px;
     background:rgba(255,255,255,1);
@@ -1023,7 +1041,8 @@ opacity: 1; /*结尾状态 不透明*/
 }
 .partner-input span{
     display: inline-block;
-    width: 85%;
+    width: 87%;
+    height: 45px;
     border-bottom:1px solid #ccc; 
 }
 .partner-input span input::-webkit-input-placeholder{
@@ -1107,6 +1126,9 @@ opacity: 1; /*结尾状态 不透明*/
 .we{
     margin-top: 100px;
     position: relative; 
+}
+.up{
+    margin-top: 150px;
 }
 .us{
     text-align: center; 
@@ -1242,7 +1264,10 @@ opacity: 1; /*结尾状态 不透明*/
     margin-top: 100px;
 }
 .word{
+    position: relative;
     text-align: center;
+    height: 190px;
+    margin: 0 auto;
     color:#727272;
     font-size: 14px;
 }
@@ -1272,6 +1297,7 @@ opacity: 1; /*结尾状态 不透明*/
     display: -ms-flexbox; /* 混合版本语法: IE 10 */
     display: -webkit-flex; /* 新版本语法: Chrome 21+ */
     display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+
 }
 .swiper-slide .left{
     width: 30%;
@@ -1339,14 +1365,19 @@ opacity: 1; /*结尾状态 不透明*/
     font-family:SourceHanSansSC-Light;
     font-weight:300;
 }
+.swiper-slide img{
+    cursor: pointer;
+    width: 100%;
+    /* height:460px; */
+}
 .corporatr{
-    width: 630px; 
-    margin: 0 auto;
     margin-top: 100px;
 }
 .corporatr .first-one{ 
     margin: 25px 0;
     width: 630px;
+    margin: 0 auto;
+
     display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
     display: -moz-box; /* 老版本语法: Firefox (buggy) */
     display: -ms-flexbox; /* 混合版本语法: IE 10 */
@@ -1477,10 +1508,26 @@ opacity: 1; /*结尾状态 不透明*/
 .photo .service-photo{
     margin-top: 100px;
 } 
+.photo{
+    margin-bottom: 80px;
+}
+.service-mdhcare{
+    width: 100%;
+    height: 190px;
+    background: url('../img/imgs/img_center.png')
+}
+.service-mdhcare .h4-h6{
+    width: 100%;
+    height: 190px;
+    margin:0 auto;
+    text-align: center;
+    line-height: 30px;
+}
 .service-mdhcare .word .team{
     position: absolute;
     top: 20%;
-    left: 30%;
+    left: 50%;
+    transform: translate(-50%);
     width:660px;
     height:16px;
     font-size:16px;
@@ -1490,7 +1537,8 @@ opacity: 1; /*结尾状态 不透明*/
 }
 .service-mdhcare .word .seaman{
     position: absolute;
-    left:37%;
+    left: 50%;
+    transform: translate(-50%);
     top:40%;
     width:462px;
     height:16px;
@@ -1503,7 +1551,8 @@ opacity: 1; /*结尾状态 不透明*/
 .service-mdhcare .word .if{
     position: absolute;
     top:70%;
-    left:40%;
+    left: 50%;
+    transform: translate(-50%);
     width:350px;
     height:18px;
     font-size:18px;
@@ -1658,6 +1707,7 @@ opacity: 1; /*结尾状态 不透明*/
     font-size: 0;
 }
 .gene-img{
+    position: relative;
     width: 891px;
     display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
     display: -moz-box; /* 老版本语法: Firefox (buggy) */
@@ -1667,6 +1717,8 @@ opacity: 1; /*结尾状态 不透明*/
     margin: 0 auto;
 }
 .hover-img1,.hover-img2,.hover-img3{ 
+    position: absolute;
+    bottom:0px;
     display: none;
 }
 .gene-img .gene-img1,.gene-img .gene-img2,.gene-img .gene-img3{
@@ -1938,10 +1990,13 @@ opacity: 1; /*结尾状态 不透明*/
     position: absolute;
     text-align: center;
     top:30%;
-    left: 15%;
+    left: 27%;
+    padding: 0;
+    margin: 0;
 }
 .datas .lotdata{
     margin-bottom: 40px;
+    padding: 0;
 }
 .datas .lotdata li{
     width:25%;
